@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="lib/react.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/react-dom.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container"></div>
+    
+    <script type="text/babel">
+    	var names = [<h1>Hello, Ariel!</h1>, 
+    				 <h1>Hello, Monica!</h1>];
+
+    	ReactDOM.render(
+    	  <div>
+    	  {names}
+    	  </div>,
+    	  document.getElementById('container')
+    	);
+    </script>
+</body>
+
+</html>

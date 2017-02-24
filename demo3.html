@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="lib/react.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/react-dom.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container"></div>
+    
+    <script type="text/babel">
+
+    	class HelloMessage extends React.PureComponent{
+    	  constructor(props) {
+    	      super(props);
+    	  }
+
+    	  render() {
+    	    return <h1>I am {this.props.name}</h1>;
+    	  }
+    	}
+    	ReactDOM.render(
+    	  <HelloMessage name="Oscar" />,
+    	  document.getElementById('container')
+    	);
+    </script>
+</body>
+
+</html>
